@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QCM – Sécurité des procédés</title>
+<style>
+:root{--navy:#1f3a5f;--red:#c0392b;--grn:#27ae60;--org:#e67e22;--bg:#eef2f7;--card:#fff;--ink:#1e2837}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+header h1{font-size:1.15rem;margin:0;flex:1}
+.btn{border:0;border-radius:10px;padding:10px 18px;font-size:1rem;font-weight:600;cursor:pointer;background:var(--navy);color:#fff}
+.btn:hover{filter:brightness(1.15)}
+.btn.alt{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+header .btn{background:#fff;color:var(--navy)}
+main{max-width:820px;margin:24px auto;padding:0 16px}
+.card{background:var(--card);border-radius:16px;padding:24px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.bar{height:10px;background:#d8dfe9;border-radius:6px;overflow:hidden;margin:0 0 16px}
+.bar>i{display:block;height:100%;background:var(--grn);transition:width .3s}
+.meta{display:flex;justify-content:space-between;font-size:.9rem;color:#5a6779;margin-bottom:8px;flex-wrap:wrap;gap:6px}
+.tag{background:#e5edf8;color:var(--navy);padding:2px 10px;border-radius:99px;font-weight:600}
+h2{font-size:1.25rem;line-height:1.4;margin:6px 0 18px}
+.choice{display:block;width:100%;text-align:left;padding:14px 16px;margin:10px 0;border:2px solid #cfd8e6;border-radius:12px;background:#fff;font-size:1rem;cursor:pointer;color:var(--ink)}
+.choice:hover:not(:disabled){border-color:var(--navy);background:#f4f8fd}
+.choice.bad{border-color:var(--red);background:#fdecea;color:#7a1f16}
+.choice.ok{border-color:var(--grn);background:#e8f7ee}
+.choice:disabled{cursor:default}
+.msg{margin:14px 0;padding:12px 14px;border-radius:10px;font-weight:600}
+.msg.warn{background:#fff4e5;color:#8a4b00}
+.msg.good{background:#e8f7ee;color:#14663a}
+.msg.err{background:#fdecea;color:#7a1f16}
+.exp{background:#f3f6fb;border-left:5px solid var(--navy);padding:12px 14px;border-radius:8px;margin:12px 0;line-height:1.5}
+.kw{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.kw input{flex:1;min-width:200px;padding:12px;border:2px solid var(--navy);border-radius:10px;font-size:1.05rem}
+.kw input.shake{animation:sh .3s;border-color:var(--red)}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 22px}
+.chip{padding:8px 14px;border-radius:99px;border:2px solid var(--navy);background:#fff;color:var(--navy);font-weight:600;cursor:pointer;user-select:none}
+.chip.on{background:var(--navy);color:#fff}
+.score{font-size:2.6rem;font-weight:800;color:var(--navy);margin:6px 0}
+table{width:100%;border-collapse:collapse;margin:14px 0}
+td,th{padding:8px 10px;border-bottom:1px solid #e0e6ef;text-align:left}
+.miss{margin:6px 0;padding:10px 12px;background:#fdf3f2;border-radius:8px}
+.hide{display:none}
+</style>
+</head>
+<body>
+<header>
+  <h1>🦺 QCM – Sécurité des procédés</h1>
+  <button class="btn" id="restartTop">↻ Recommencer</button>
+</header>
+<main>
+  <div class="card" id="start">
+    <h2>Choisis les chapitres à réviser</h2>
+    <p>Deux essais par question. Après deux erreurs, la bonne réponse s'affiche et tu dois <b>retaper le mot-clé</b> pour continuer. Barème : 1 point (1<sup>er</sup> essai), 0,5 point (2<sup>e</sup> essai), 0 sinon.</p>
+    <div class="chips" id="chips"></div>
+    <button class="btn" id="go">Commencer</button>
+  </div>
+  <div class="card hide" id="quiz"></div>
+  <div class="card hide" id="end"></div>
+</main>
+<script src="questions.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/,/g, ".").replace(/[«»"'’.]+$/g, "").replace(/\s+/g, " ").trim();
+let selected = new Set(Object.keys(CHAPTERS).map(Number));
+let deck = [], idx = 0, tries = 0, pts = 0, results = [], locked = false;
+
+// ----- écran de départ -----
+function drawChips() {
+  const el = $("#chips"); el.innerHTML = "";
+  const all = document.createElement("span");
+  all.className = "chip" + (selected.size === Object.keys(CHAPTERS).length ? " on" : "");
+  all.textContent = "Tout le cours";
+  all.onclick = () => { selected = new Set(Object.keys(CHAPTERS).map(Number)); drawChips(); };
+  el.appendChild(all);
+  for (const [k, v] of Object.entries(CHAPTERS)) {
+    const c = document.createElement("span");
+    c.className = "chip" + (selected.has(+k) ? " on" : ""); c.textContent = v;
+    c.onclick = () => { selected.has(+k) ? selected.delete(+k) : selected.add(+k); if (!selected.size) selected.add(+k); drawChips(); };
+    el.appendChild(c);
+  }
+}
+function show(id) { for (const x of ["start", "quiz", "end"]) $("#" + x).classList.toggle("hide", x !== id); }
+
+// ----- démarrage / redémarrage (tout est remélangé) -----
+function startQuiz() {
+  deck = shuffle(QUESTIONS.filter(q => selected.has(q.c))).map(q => ({ ...q, opts: shuffle(q.ch) }));
+  idx = 0; pts = 0; results = [];
+  show("quiz"); render();
+}
+function render() {
+  const q = deck[idx]; tries = 0; locked = false;
+  const box = $("#quiz");
+  box.innerHTML = `
+    <div class="bar"><i style="width:${idx / deck.length * 100}%"></i></div>
+    <div class="meta"><span class="tag">${CHAPTERS[q.c]}</span><span>Question ${idx + 1} / ${deck.length} · Score : ${pts}</span></div>
+    <h2>${q.q}</h2><div id="choices"></div><div id="fb"></div>`;
+  q.opts.forEach(o => {
+    const b = document.createElement("button");
+    b.className = "choice"; b.textContent = o; b.onclick = () => answer(b, o);
+    $("#choices").appendChild(b);
+  });
+}
+function answer(btn, o) {
+  if (locked) return;
+  const q = deck[idx], fb = $("#fb");
+  if (o === q.ch[0]) {
+    btn.classList.add("ok"); locked = true;
+    const p = tries === 0 ? 1 : 0.5; pts += p;
+    results.push({ q, p });
+    document.querySelectorAll(".choice").forEach(b => b.disabled = true);
+    fb.innerHTML = `<div class="msg good">✅ Bonne réponse ! +${p} point${p > 1 ? "s" : ""}</div><div class="exp">${q.e} <i>(${q.p})</i></div><button class="btn" id="next">Suivant →</button>`;
+    $("#next").onclick = next; $("#next").focus();
+    return;
+  }
+  tries++; btn.classList.add("bad"); btn.disabled = true;
+  if (tries === 1) {
+    fb.innerHTML = `<div class="msg warn">❌ Raté ! Il te reste 1 essai.</div>`;
+  } else {
+    locked = true;
+    document.querySelectorAll(".choice").forEach(b => { b.disabled = true; if (b.textContent === q.ch[0]) b.classList.add("ok"); });
+    fb.innerHTML = `<div class="msg err">❌ Raté deux fois. La bonne réponse est en vert.</div>
+      <div class="exp">${q.e} <i>(${q.p})</i></div>
+      <p><b>Pour continuer, retape le mot-clé :</b> <span class="tag">${q.kw[0]}</span></p>
+      <div class="kw"><input id="kwin" autocomplete="off" placeholder="Écris le mot-clé ici…"><button class="btn" id="kwok">Valider</button></div>
+      <div id="kwfb"></div>`;
+    const inp = $("#kwin"); inp.focus();
+    const check = () => {
+      if (q.kw.some(k => norm(k) === norm(inp.value))) {
+        results.push({ q, p: 0 });
+        $("#kwfb").innerHTML = `<div class="msg good">✅ Bien noté !</div><button class="btn" id="next">Suivant →</button>`;
+        inp.disabled = true; $("#kwok").disabled = true; $("#next").onclick = next; $("#next").focus();
+      } else {
+        inp.classList.remove("shake"); void inp.offsetWidth; inp.classList.add("shake");
+        $("#kwfb").innerHTML = `<div class="msg warn">Ce n'est pas le bon mot-clé, réessaie.</div>`;
+      }
+    };
+    $("#kwok").onclick = check;
+    inp.addEventListener("keydown", e => { if (e.key === "Enter") check(); });
+  }
+}
+function next() { idx++; idx < deck.length ? render() : finish(); }
+function finish() {
+  show("end");
+  const total = deck.length, per = {};
+  results.forEach(r => { const c = r.q.c; per[c] ??= { p: 0, n: 0 }; per[c].p += r.p; per[c].n++; });
+  const missed = results.filter(r => r.p < 1);
+  $("#end").innerHTML = `
+    <h2>Résultat</h2>
+    <div class="score">${pts} / ${total}</div>
+    <p>${pts / total >= .8 ? "🏆 Excellent, tu maîtrises !" : pts / total >= .5 ? "👍 Pas mal, retravaille les points ratés." : "📚 Continue à réviser, tu vas y arriver !"}</p>
+    <table><tr><th>Chapitre</th><th>Score</th></tr>
+    ${Object.keys(per).map(c => `<tr><td>${CHAPTERS[c]}</td><td>${per[c].p} / ${per[c].n}</td></tr>`).join("")}</table>
+    ${missed.length ? "<h3>À revoir</h3>" + missed.map(r => `<div class="miss"><b>${r.q.q}</b><br>→ ${r.q.ch[0]} <i>(${r.q.p})</i></div>`).join("") : "<p>Aucune erreur, bravo !</p>"}
+    <p><button class="btn" id="again">↻ Recommencer (questions mélangées)</button> <button class="btn alt" id="menu">Choisir les chapitres</button></p>`;
+  $("#again").onclick = startQuiz; $("#menu").onclick = () => show("start");
+}
+$("#go").onclick = startQuiz;
+$("#restartTop").onclick = startQuiz;
+drawChips();
+</script>
+</body>
+</html>
