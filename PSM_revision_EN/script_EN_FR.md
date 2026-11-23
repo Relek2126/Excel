@@ -1,0 +1,715 @@
+# Voice-over script / Script de la voix off (EN + FR subtitles)
+
+
+## [00:00] 0 · Intro
+
+- Hi!
+  - *Salut !*
+- Here is your survival guide for the process safety management exam.
+  - *Voici ton guide de survie pour le partiel de gestion de la sécurité des procédés.*
+- We go through the whole course: the concepts, the formulas, and the numbers you need to know.
+  - *On passe tout le cours en revue : les notions, les formules, et les chiffres à connaître.*
+- Let's go!
+  - *C'est parti !*
+- Let's start with a true story.
+  - *Commençons par une histoire vraie.*
+- On April 8th, 2021, in Columbus, Ohio, the Yenkin-Majestic resin plant exploded.
+  - *Le 8 avril 2021, à Columbus, dans l'Ohio, l'usine de résines Yenkin-Majestic explose.*
+- Just a paint facility, considered low risk.
+  - *Une simple installation de peinture, jugée à faible risque.*
+- The toll: 1 dead, 8 injured, and 90 million dollars of damage.
+  - *Bilan : 1 mort, 8 blessés, et 90 millions de dollars de dégâts.*
+- Lesson: danger does not only hide in plants that look dangerous.
+  - *Leçon : le danger ne se cache pas que dans les usines qui ont l'air dangereuses.*
+- Our roadmap: first the PSM system and its 14 elements; then the 9 process hazards, with their formulas; and finally a closing quiz to check that you are ready.
+  - *Notre feuille de route : d'abord le système PSM et ses 14 éléments ; ensuite les 9 dangers du procédé, avec leurs formules ; et enfin un quiz final pour vérifier que tu es opérationnel.*
+
+## [00:43] 1 · Why PSM
+
+- Why manage process safety?
+  - *Pourquoi gérer la sécurité des procédés ?*
+- Because accidents have a thousand faces.
+  - *Parce que les accidents ont mille visages.*
+- Fire and explosion.
+  - *L'incendie et l'explosion.*
+- Failure of pressure equipment: overpressure, BLEVE, runaway, external fire, decomposition.
+  - *La défaillance d'un équipement sous pression : surpression, BLEVE, emballement, feu externe, décomposition.*
+- Rotating equipment: compressors, pumps, turbines.
+  - *Les équipements tournants : compresseurs, pompes, turbines.*
+- And the release of toxic substances into the environment.
+  - *Et le rejet de substances toxiques dans l'environnement.*
+- Skin contact, entrapment by machinery, and the loss of an essential utility: power, nitrogen, instrument air, steam.
+  - *Le contact avec la peau, le happement par une machine, et le manque d'une utilité essentielle : électricité, azote, air instrument, vapeur.*
+- Finally electrical risk, operational risk and cyber-attacks.
+  - *Enfin le risque électrique, le risque opérationnel et les cyberattaques.*
+- In this course we focus on the hazards that come from the process, and that must be addressed at the design stage.
+  - *Dans ce cours, on se concentre sur ceux qui viennent du procédé, et qu'il faut prendre en compte dès la conception.*
+- Another key idea: even if your plant meets every standard, you need a social licence to operate.
+  - *Autre idée clé : même si ton usine respecte toutes les normes, il te faut une licence sociale d'exploiter.*
+- Your activity depends on many stakeholders: shareholders, authorities, employees, customers, contractors, neighbours, NGOs, insurers.
+  - *Ton activité dépend de nombreuses parties prenantes : actionnaires, autorités, salariés, clients, sous-traitants, riverains, associations, assureurs.*
+- Could you run your business without the support of any of them?
+  - *Pourrais-tu travailler sans le soutien de l'un d'eux ?*
+- No.
+  - *Non.*
+
+## [01:42] 2 · PSM system
+
+- The Process Safety Management system, PSM, is a structured tool to prevent catastrophic releases of hazardous chemicals.
+  - *Le système de gestion de la sécurité des procédés, le PSM, est un outil structuré pour prévenir les rejets catastrophiques de produits dangereux.*
+- Its role: identify, evaluate and control the hazards.
+  - *Son rôle : identifier, évaluer et maîtriser les dangers.*
+- And not only in normal operation: also in transient operation and upset conditions.
+  - *Et pas seulement en fonctionnement normal : aussi en régime transitoire et en conditions perturbées.*
+- That is where accidents happen.
+  - *C'est là que les accidents arrivent.*
+- It has 14 elements, in 3 blocks: technology, personnel and operations, maintenance and management.
+  - *Il compte 14 éléments, en 3 blocs : technologie, personnel et opérations, maintenance et management.*
+- Remember the sequence 2, 5, 7.
+  - *Retiens la séquence 2, 5, 7.*
+- Technology block.
+  - *Bloc technologie.*
+- One: process safety information.
+  - *Un : les informations de sécurité du procédé.*
+- Two: process hazard analysis, with methods such as What-if or HAZOP.
+  - *Deux : l'analyse des dangers, avec des méthodes comme le What-if ou le HAZOP.*
+- Personnel block.
+  - *Bloc personnel.*
+- Three: operating procedures.
+  - *Trois : les procédures opératoires.*
+- Four: employee participation.
+  - *Quatre : la participation des employés.*
+- Five: training.
+  - *Cinq : la formation.*
+- Six: contractors.
+  - *Six : les sous-traitants.*
+- Seven: the Pre-Startup Safety Review, PSSR, which confirms that a new or modified facility is safe before chemicals are introduced.
+  - *Sept : la revue de sécurité avant démarrage, la PSSR, qui confirme qu'une installation neuve ou modifiée est sûre avant d'y introduire les produits chimiques.*
+- Maintenance and management block.
+  - *Bloc maintenance et management.*
+- Eight: mechanical integrity.
+  - *Huit : l'intégrité mécanique.*
+- Nine: hot work permit.
+  - *Neuf : le permis de feu.*
+- Ten: management of change, MOC.
+  - *Dix : la gestion des modifications, le MOC.*
+- Any modification, even temporary, to technology, equipment, procedures or the organisation must be approved before it is implemented.
+  - *Toute modification, même temporaire, de la technologie, des équipements, des procédures ou de l'organisation doit être approuvée avant sa mise en œuvre.*
+- Eleven: incident investigation, near misses included, to find root causes.
+  - *Onze : l'analyse des incidents, presque-accidents compris, pour trouver les causes racines.*
+- Twelve: emergency planning.
+  - *Douze : le plan d'urgence.*
+- Thirteen: audits.
+  - *Treize : les audits.*
+- Fourteen: trade secrets, which must not block access to safety information.
+  - *Quatorze : les secrets commerciaux, qui ne doivent pas bloquer l'accès à l'information de sécurité.*
+- Flash question.
+  - *Question flash.*
+- Which PSM element confirms that a new or modified facility is safe, before chemicals are introduced?
+  - *Quel élément du PSM confirme qu'une installation neuve ou modifiée est sûre, avant d'y introduire les produits chimiques ?*
+- The Pre-Startup Safety Review, PSSR.
+  - *La revue de sécurité avant démarrage, la PSSR.*
+- Do not confuse it with MOC, which approves a modification before it is implemented.
+  - *Ne la confonds pas avec le MOC, qui approuve la modification avant sa mise en œuvre.*
+- Golden rule: know the substances in depth, their hazards, and their pressure and temperature conditions, thanks to the safety data sheet.
+  - *Règle d'or : connaître en profondeur les substances, leurs dangers, leurs conditions de pression et de température, grâce à la fiche de données de sécurité.*
+- Then, 9 hazards to master: stability, flammability, runaway, decomposition, external fire, BLEVE, overpressure, oxygen, and toxicity.
+  - *Ensuite, 9 dangers à maîtriser : stabilité, inflammabilité, emballement, décomposition, feu externe, BLEVE, surpression, oxygène, et toxicité.*
+- These nine hazards fall into three families: reactions, three to six; pressure equipment, seven to nine; and products, ten and eleven.
+  - *Ces neuf dangers se répartissent en trois familles : les réactions, de 3 à 6 ; les équipements sous pression, de 7 à 9 ; et les produits, 10 et 11.*
+
+## [04:01] 3 · Stability
+
+- First hazard: stability.
+  - *Premier danger : la stabilité.*
+- A substance can react by itself, or in contact with others, depending on pressure, temperature, pH, a catalyst or radicals.
+  - *Une substance peut réagir seule, ou au contact d'autres, selon la pression, la température, le pH, un catalyseur ou des radicaux.*
+- A good indicator: the heat of formation.
+  - *Un bon indicateur : la chaleur de formation.*
+- The more negative it is, the more stable the substance.
+  - *Plus elle est négative, plus la substance est stable.*
+- But it is not the only criterion: also look at the change in the number of moles, Δn, and above all the physical state.
+  - *Mais ce n'est pas le seul critère : regarde aussi la variation du nombre de moles, Δn, et surtout l'état physique.*
+- For a huge explosion, you need four conditions.
+  - *Pour une énorme explosion, il faut quatre conditions.*
+- An exothermic reaction.
+  - *Réaction exothermique.*
+- Fast propagation.
+  - *Propagation rapide.*
+- A positive Δn.
+  - *Delta n positif.*
+- And solid or liquid reactants giving gaseous products.
+  - *Et des réactifs solides ou liquides qui donnent des produits gazeux.*
+- If all four are met: perfect conditions!
+  - *Si les quatre sont réunies : conditions parfaites !*
+- They come back for decomposition.
+  - *Elles reviennent pour la décomposition.*
+- Propagation is faster when concentration is high, contact surface is large, activation energy is low, or in the presence of a catalyst or radicals.
+  - *La propagation est d'autant plus rapide que la concentration est élevée, la surface de contact grande, l'énergie d'activation faible, ou en présence de catalyseur ou de radicaux.*
+- Ammonium nitrate, AN: very stable, with a heat of formation of −366.1 kJ/mol.
+  - *Le nitrate d'ammonium, AN : très stable, avec une chaleur de formation de −366,1 kJ/mol.*
+- But when heated, it decomposes into even more stable compounds: 2 NH₄NO₃ give 2 nitrogen, plus oxygen, plus 4 water.
+  - *Mais chauffé, il se décompose en composés encore plus stables : 2 NH₄NO₃ donnent 2 azote, plus oxygène, plus 4 eau.*
+- Since water is more stable, the balance is strongly exothermic: −117.5 kJ/mol, about −355 kcal/kg.
+  - *Comme l'eau est plus stable, le bilan est très exothermique : −117,5 kJ/mol, soit environ −355 kcal/kg.*
+- And the number of moles is multiplied by 3.5.
+  - *Et le nombre de moles est multiplié par 3,5.*
+- 1 kilo of solid nitrate is 0.6 litre; it gives about 980 normal litres of gas.
+  - *1 kilo de nitrate solide, c'est 0,6 litre ; il donne environ 980 litres normaux de gaz.*
+- The reaction is ultra-fast: products reach 1000 to 1500 °C in a few milliseconds.
+  - *La réaction est ultra-rapide : les produits montent à 1000 ou 1500 °C en quelques millisecondes.*
+- At 1200 °C, the 980 normal litres occupy 5278 litres.
+  - *À 1200 °C, les 980 litres normaux occupent 5278 litres.*
+- Compressing 5278 litres back into 0.6 litre would need about 8800 atmospheres.
+  - *Remettre 5278 litres dans 0,6 litre demanderait environ 8800 atmosphères.*
+- Imagine the explosion!
+  - *Imagine l'explosion !*
+- In fact, AN is only 42 % of TNT, but it is stored in huge amounts: about 3000 tonnes in Beirut.
+  - *En fait, l'AN ne vaut que 42 % du TNT, mais il est stocké en quantités énormes : environ 3000 tonnes à Beyrouth.*
+- Flash question.
+  - *Question flash.*
+- Ammonium nitrate is very stable, with a very negative heat of formation.
+  - *Le nitrate d'ammonium est très stable, avec une chaleur de formation très négative.*
+- Why is it nevertheless explosive?
+  - *Pourquoi est-il pourtant explosif ?*
+- Because it decomposes into even more stable products, with a very exothermic and fast reaction, from solid to gas, and a number of moles multiplied by 3.5.
+  - *Parce qu'il se décompose en produits encore plus stables, avec une réaction très exothermique et rapide, de solide vers gaz, et un nombre de moles multiplié par 3,5.*
+
+## [06:38] 4 · Flammability
+
+- Fourth hazard: flammability.
+  - *Quatrième danger : l'inflammabilité.*
+- Imagine some methane in a room.
+  - *Imagine du méthane dans une pièce.*
+- We turn on the light: a spark.
+  - *On allume la lumière : étincelle.*
+- Will all the methane burn?
+  - *Tout le méthane va-t-il brûler ?*
+- Not necessarily.
+  - *Pas forcément.*
+- It depends on the methane concentration, the oxygen concentration, and the heat absorbed by inert gases.
+  - *Ça dépend de la concentration de méthane, de la concentration d'oxygène, et de la chaleur absorbée par les gaz inertes.*
+- There is a range where it burns.
+  - *Il existe une plage où ça brûle.*
+- Below the LEL, the lower explosive limit, it is too lean.
+  - *En dessous de la LEL, limite inférieure d'explosivité, c'est trop pauvre.*
+- Above the UEL, the upper limit, too rich.
+  - *Au-dessus de l'UEL, limite supérieure, trop riche.*
+- For methane: LEL 5 %, UEL 15 %.
+  - *Pour le méthane : LEL 5 %, UEL 15 %.*
+- And in the middle, the stoichiometric concentration, Cst, 9.5 %: the most destructive mixture.
+  - *Et au milieu, la concentration stœchiométrique Cst, 9,5 % : le mélange le plus destructeur.*
+- How do we find Cst?
+  - *Comment trouver Cst ?*
+- We write the combustion.
+  - *On écrit la combustion.*
+- In air, each oxygen comes with 3.773 nitrogen.
+  - *Dans l'air, chaque oxygène arrive avec 3,773 azote.*
+- So 1 mole of methane for 10.5 moles of mixture: Cst equals 9.5 %.
+  - *Donc 1 mole de méthane pour 10,5 moles de mélange : Cst égale 9,5 %.*
+- For alkanes, CₙH₂ₙ₊₂: Cst equals 100 divided by 1 plus 4.773 times, 1.5 n plus 0.5.
+  - *Pour les alcanes CₙH₂ₙ₊₂ : Cst égale 100 divisé par 1 plus 4,773 fois, 1,5 n plus 0,5.*
+- And 4.773 is the inverse of 0.2095, the oxygen content of air.
+  - *Et 4,773, c'est l'inverse de 0,2095, la teneur en oxygène de l'air.*
+- Two experimental rules to remember, for saturated hydrocarbons.
+  - *Deux règles expérimentales à retenir absolument pour les hydrocarbures saturés.*
+- The LEL is about 0.55 times Cst.
+  - *La LEL vaut environ 0,55 fois Cst.*
+- And the UEL is about 4.8 times the square root of Cst.
+  - *Et l'UEL vaut environ 4,8 fois la racine carrée de Cst.*
+- Classic example: butane.
+  - *Exemple classique : le butane.*
+- Its combustion gives Cst equal to 3.12 %, so LEL about 1.7 % and UEL about 8.5 %.
+  - *Sa combustion donne Cst égal 3,12 %, donc LEL environ 1,7 % et UEL environ 8,5 %.*
+- We find these values with the two rules: 0.55 times 3.12, and 4.8 times the square root of 3.12.
+  - *On retrouve ces valeurs avec les deux règles : 0,55 fois 3,12, et 4,8 fois la racine de 3,12.*
+- An apartment of 80 m² with a 2.7 metre ceiling is 200 m³.
+  - *Un appartement de 80 m² sous 2,7 mètres de plafond, c'est 200 m³.*
+- CS Tcorresponds to 6.24 m³ of butane: 255 moles, 14.8 kilos.
+  - *CS Tcorrespond à 6,24 m³ de butane : 255 moles, 14,8 kilos.*
+- Yet a household cylinder holds 12.5 kilos!
+  - *Or une bouteille domestique contient 12,5 kilos !*
+- A total leak at home, ignited at the end, gives almost the most destructive mixture.
+  - *Une fuite totale chez toi, qui s'enflamme à la fin, donne presque le mélange le plus destructeur.*
+- General case, with carbon, hydrogen, oxygen and fluorine: the oxygen needed is n plus m minus k −2 lambda, all over 4.
+  - *Cas général, avec carbone, hydrogène, oxygène et fluor : l'oxygène nécessaire est n plus m moins k −2 lambda, le tout sur 4.*
+- And Cst equals 100 divided by 1 plus 4.773 times that quantity.
+  - *Et Cst égale 100 divisé par 1 plus 4,773 fois cette quantité.*
+- No need to memorise it: just know how to rebuild it from the combustion reaction.
+  - *Inutile de l'apprendre : sache la retrouver depuis la réaction de combustion.*
+- For a mixture, Le Chatelier's law: L25mix equals 100 divided by the sum of Yᵢ over L25ᵢ, where Yᵢ is the mole percentage of the component.
+  - *Pour un mélange, loi de Le Chatelier : L25mix égale 100 divisé par la somme des Yᵢ sur L25ᵢ, où Yᵢ est le pourcentage molaire du composant.*
+- Same for the UEL.
+  - *Même chose pour l'UEL.*
+- Then we correct for temperature with Burgess-Wheeler.
+  - *Puis on corrige la température avec Burgess-Wheeler.*
+- For the LEL: Lt equals L25mix −0.75 over ΔHc, times t −25.
+  - *Pour la LEL : Lt égale L25mix −0,75 sur ΔHc, fois t −25.*
+- Then pressure: we subtract 0.71 log of P.
+  - *Puis la pression : on retranche 0,71 log de P.*
+- For the UEL it is the reverse: pressure first, which raises it strongly, plus 20.4 log of P.
+  - *Pour l'UEL, c'est l'inverse : d'abord la pression, qui l'augmente fortement, plus 20,4 log de P.*
+- Then temperature.
+  - *Puis la température.*
+- Mind the order!
+  - *Attention à l'ordre !*
+- L: temperature then pressure.
+  - *L : température puis pression.*
+- U: pressure then temperature.
+  - *U : pression puis température.*
+- In short: as temperature rises, the LEL falls and the UEL rises; as pressure rises, the range widens, mostly toward the UEL.
+  - *En résumé : quand la température monte, la LEL baisse et l'UEL monte ; quand la pression monte, le domaine s'élargit, surtout vers l'UEL.*
+- The course exercise: 8 gases, at 100 °C and 10 atmospheres.
+  - *L'exercice du cours : 8 gaz, à 100 °C et 10 atmosphères.*
+- At 25 °C: LEL 2.30 %, UEL 11.98, Cst 4.43.
+  - *À 25 °C : LEL 2,30 %, UEL 11,98, Cst 4,43.*
+- After corrections: LEL 1.47 and UEL 32.51.
+  - *Après corrections : LEL 1,47 et UEL 32,51.*
+- At high pressure, the UEL explodes!
+  - *À haute pression, l'UEL explose !*
+- The course does not give the heat of combustion of the mixture: a mole-weighted average of the eight values reproduces the result, about 449 kcal/mol.
+  - *Le cours ne donne pas la chaleur de combustion du mélange : la moyenne pondérée par les moles des huit valeurs reproduit le résultat, environ 449 kcal/mol.*
+- Last tool: the flammability triangle, with fuel, oxygen and nitrogen.
+  - *Dernier outil : le triangle d'inflammabilité, avec combustible, oxygène et azote.*
+- In the middle, the flammable zone.
+  - *Au milieu, la zone inflammable.*
+- Adding an inert, nitrogen or CO₂, takes us out of this zone: that is the principle of inerting.
+  - *Ajouter un inerte, azote ou CO₂, fait sortir de cette zone : c'est le principe de l'inertage.*
+- Flash question.
+  - *Question flash.*
+- For propane, n equals 3: compute Cst, then the LEL and the UEL.
+  - *Pour le propane, n égale 3 : calcule Cst, puis la LEL et l'UEL.*
+- Cst equals 100 divided by 1 plus 4.773 times 5, so 4.02 %.
+  - *Cst égale 100 divisé par 1 plus 4,773 fois 5, soit 4,02 %.*
+- LEL about 2.2, UEL about 9.6.
+  - *LEL environ 2,2, UEL environ 9,6.*
+- Close to the course table: 2.1 and 9.5.
+  - *Proche du tableau du cours : 2,1 et 9,5.*
+
+## [11:29] 5 · Runaway
+
+- Fifth hazard: thermal runaway.
+  - *Cinquième danger : l'emballement thermique.*
+- A fast, uncontrolled rise in temperature and pressure, caused by an exothermic reaction that accelerates itself.
+  - *Une hausse rapide et incontrôlée de la température et de la pression, causée par une réaction exothermique qui s'auto-accélère.*
+- Three ingredients: the reaction releases heat; cooling is insufficient; and as T rises, the rate increases exponentially, so even more heat.
+  - *Trois ingrédients : la réaction dégage de la chaleur ; le refroidissement est insuffisant ; et quand T monte, la vitesse augmente exponentiellement, donc encore plus de chaleur.*
+- Hazards: overpressure, rupture if relief cannot keep up, toxic or flammable leaks.
+  - *Dangers : surpression, rupture si la dECHArge ne suit pas, fuites toxiques ou inflammables.*
+- Causes: loss of cooling or power, feed too fast, impurities acting as a catalyst, poor agitation.
+  - *Causes : refroidissement ou électricité en panne, alimentation trop rapide, impuretés qui font catalyseur, agitation insuffisante.*
+- Prevention: redundant cooling, redundant relief valves and rupture discs to a safe place,
+  - *Prévention : refroidissement redondant, soupapes et disques de rupture redondants vers un lieu sûr,*
+- and quench systems: injection of inhibitors and reactant shut-off, triggered by a safety instrumented system.
+  - *et systèmes de quench : injection d'inhibiteurs et coupure des réactifs, déclenchés par un système instrumenté de sécurité.*
+- Two accidents to know.
+  - *Deux accidents à connaître.*
+- Bhopal, 1984: 40 tonnes of MIC contaminated with water, cooling out of service: thousands of deaths.
+  - *Bhopal, 1984 : 40 tonnes de MIC contaminées par de l'eau, refroidissement hors service : des milliers de morts.*
+- Seveso, 1976: a reactor left on hold over a weekend, agitation stopped, hot spot, exothermic decomposition, disc burst, dioxin cloud.
+  - *Seveso, 1976 : un réacteur laissé en attente un week-end, agitation arrêtée, point chaud, décomposition exothermique, éclatement du disque, nuage de dioxine.*
+- The Semenov diagram.
+  - *Le diagramme de Semenov.*
+- In red, the heat generated: an exponential, Arrhenius law, Qgen ∝ e^(−Ea/RT).
+  - *En rouge, la chaleur produite : une exponentielle, loi d'Arrhenius.*
+- The heat removed is a straight line: Qrem equals UA times T minus Tc.
+  - *La chaleur évacuée est une droite : Qrem égale UA fois T moins Tc.*
+- Green line: efficient cooling, two intersections.
+  - *Droite verte : refroidissement efficace, deux intersections.*
+- A is stable: if T rises, cooling exceeds generation.
+  - *A est stable : si T monte, le refroidissement dépasse la production.*
+- The other point is unstable.
+  - *L'autre point est instable.*
+- Orange line: tangent at a single point.
+  - *Droite orange : tangente en un seul point.*
+- It is the maximum admissible temperature before thermal explosion.
+  - *C'est la température maximale admissible avant l'explosion thermique.*
+- Blue line: everything is below the red curve.
+  - *Droite bleue : tout est sous la courbe rouge.*
+- Generation always exceeds removal: runaway!
+  - *La production dépasse toujours l'évacuation : emballement !*
+- Flash question.
+  - *Question flash.*
+- On the Semenov diagram, which line marks the limit between safe operation and runaway?
+  - *Sur Semenov, quelle droite marque la limite entre fonctionnement sûr et emballement ?*
+- The tangent line, the orange one: a single contact point, the maximum admissible cooling temperature.
+  - *La droite tangente, la orange : un seul point de contact, c'est la température de refroidissement maximale admissible.*
+
+## [13:37] 6 · Decomposition
+
+- Sixth hazard: decomposition.
+  - *Sixième danger : la décomposition.*
+- Some compounds decompose by themselves into more stable compounds.
+  - *Certains composés se décomposent seuls en composés plus stables.*
+- Same conditions as for stability: exothermic, fast, positive Δn, solid or liquid to gas.
+  - *Mêmes conditions que pour la stabilité : exothermique, rapide, Δn positif, solide ou liquide vers gaz.*
+- It can start with radicals, temperature, or an unexpected catalyst: oxides, acids, bases, peroxides, oxygen.
+  - *Démarrage possible par des radicaux, la température, ou un catalyseur inattendu : oxydes, acides, bases, peroxydes, oxygène.*
+- Key example: ethylene.
+  - *Exemple clé : l'éthylène.*
+- Valuable, but an endothermic compound: ΔHf of plus 52.33 kJ/mol.
+  - *Précieux, mais composé endothermique : ΔHf de plus 52,33 kJ/mol.*
+- So it is unstable.
+  - *Donc instable.*
+- It decomposes into carbon, methane, a little hydrogen, and heat.
+  - *Il se décompose en carbone, méthane, un peu d'hydrogène, et chaleur.*
+- Normally it takes more than 700 °C.
+  - *Normalement il faut plus de 700 °C.*
+- But above 1500 bar, as in low-density polyethylene reactors, from 250 °C.
+  - *Mais à plus de 1500 bars, comme dans les réacteurs de polyéthylène basse densité, dès 250 °C.*
+- And with only 50 ppm of oxygen, 200 °C is enough at ambient pressure.
+  - *Et avec seulement 50 ppm d'oxygène, 200 °C suffisent à pression ambiante.*
+- Another mechanism: adiabatic compression.
+  - *Autre mécanisme : la compression adiabatique.*
+- High-pressure gas enters like a piston into a line full of low-pressure gas, which has no time to mix: it is violently compressed and its temperature soars.
+  - *Un gaz à haute pression entre comme un piston dans une conduite pleine de gaz basse pression, qui n'a pas le temps de se mélanger : il est comprimé violemment et sa température explose.*
+- The relation: final T equals initial T times the pressure ratio, to the power (k−1)/k, with temperatures in kelvin.
+  - *La relation : T finale égale T initiale fois le rapport des pressions, puissance (k−1)/k, avec des kelvins.*
+- k is 1.4 for a diatomic gas, 1.24 for ethylene.
+  - *k vaut 1,4 pour un gaz diatomique, 1,24 pour l'éthylène.*
+- From 25 °C, we reach 192 °C at 10 atmospheres, and 405 at 70: enough to trigger decomposition.
+  - *Depuis 25 °C, on atteint 192 °C à 10 atmosphères, et 405 à 70 : assez pour amorcer la décomposition.*
+- Flash question.
+  - *Question flash.*
+- Ethylene at 25 °C is compressed adiabatically from 1 to 20 atmospheres.
+  - *L'éthylène à 25 °C est comprimé adiabatiquement de 1 à 20 atmosphères.*
+- Final temperature?
+  - *Température finale ?*
+- k is 1.24.
+  - *k vaut 1,24.*
+- 298 kelvin times 20 to the power 0.19355: 532 kelvin, so 259 °C.
+  - *298 kelvins fois 20 puissance 0,19355 : 532 kelvins, soit 259 °C.*
+- Enough to trigger decomposition.
+  - *Assez pour amorcer la décomposition.*
+
+## [15:41] 7 · External fire
+
+- Seventh hazard: external fire.
+  - *Septième danger : le feu externe.*
+- A loss of containment of flammable product at the bottom of equipment: a major risk.
+  - *Une perte de confinement de produit inflammable en bas d'un équipement : risque majeur.*
+- Causes: failure of dynamic equipment, valve leak, drains left open, wrong operation.
+  - *Causes : défaillance d'équipement dynamique, fuite de vanne, purges laissées ouvertes, mauvaise opération.*
+- At design stage: API 521 to compute the heat absorbed and the relief rate, then API 520 to size the valves.
+  - *À la conception : API 521 pour calculer la chaleur absorbée et le débit à évacuer, puis API 520 pour dimensionner les soupapes.*
+- ASME allows 21 % overpressure for external fire, against 10 elsewhere.
+  - *L'ASME autorise 21 % de surpression pour le feu externe, contre 10 ailleurs.*
+- API 2000 for low-pressure tanks.
+  - *API 2000 pour les réservoirs basse pression.*
+- Countermeasures: fire and gas detectors, ROSOV to stop the leak remotely, sprinklers, fire-water network and trained crews.
+  - *Contre-mesures : détecteurs feu et gaz, ROSOV pour couper la fuite à distance, sprinklers, réseau d'eau incendie et équipes formées.*
+
+## [16:23] 8 · BLEVE
+
+- Eighth hazard: the BLEVE.
+  - *Huitième danger : le BLEVE.*
+- A pressurised liquid tank is caught in a fire.
+  - *Un réservoir de liquide sous pression est pris dans un incendie.*
+- The liquid heats up, pressure rises, the relief valves open.
+  - *Le liquide chauffe, la pression monte, les soupapes s'ouvrent.*
+- But the vapour-side wall, not cooled by the liquid, overheats and fails.
+  - *Mais la paroi côté vapeur, non refroidie par le liquide, surchauffe et cède.*
+- Boom.
+  - *Boum.*
+- Remember: it is a mechanical, physical explosion, not a chemical one!
+  - *Retiens : c'est une explosion mécanique, physique, pas chimique !*
+- Why so powerful?
+  - *Pourquoi si puissante ?*
+- You need a liquid superheated beyond a limit temperature, not to be confused with the critical temperature.
+  - *Il faut un liquide surchauffé au-delà d'une température limite, à ne pas confondre avec la température critique.*
+- At rupture, the sudden depressurisation makes the liquid metastable: it vaporises everywhere at once, homogeneous nucleation, and all the energy is released within a microsecond.
+  - *À la rupture, la dépressurisation brutale rend le liquide métastable : il se vaporise partout en même temps, c'est la nucléation homogène, et toute l'énergie est libérée en une microseconde.*
+- Stability criterion of a pure substance: derivative of P with respect to V negative.
+  - *Critère de stabilité d'un corps pur : dérivée de P par rapport à V négative.*
+- In reality, nucleation starts a few degrees lower: that is the kinetic limit, about 0.89 Tc.
+  - *En réalité, la nucléation démarre quelques degrés plus bas : c'est la limite cinétique, environ 0,89 Tc.*
+- The kinetic limit is reached at about ten to the four to ten to the six bubbles per cubic centimetre per second.
+  - *Cette limite cinétique est atteinte vers 10⁴ à 10⁶ bulles par cm³ et par seconde.*
+- Let's estimate: 20 tonnes of propylene heated from −47.9 °C to 50 °C, a 97.9 degree difference, with a Cp of 2500 joules per kilo per degree.
+  - *Estimons : 20 tonnes de propylène chauffées de −47,9 °C à 50 °C, soit 97,9 °C d'écart, avec un Cp de 2500 joules par kilo et par degré.*
+- Energy: about 4.9 times 10 to the 9 joules, within a microsecond.
+  - *Énergie : environ 4,9 fois 10 puissance 9 joules, en une microseconde.*
+- Divided by the energy of TNT: about 1200 kilos of TNT, before the secondary explosion.
+  - *Divisé par l'énergie du TNT : environ 1200 kilos de TNT, avant l'explosion secondaire.*
+- And any superheated liquid can cause a BLEVE, even water!
+  - *Et n'importe quel liquide surchauffé peut faire un BLEVE, même l'eau !*
+- Prevention.
+  - *Prévention.*
+- Best measure: buried tanks.
+  - *Meilleure mesure : réservoirs enterrés.*
+- Also: fewer bottom connections.
+  - *Aussi : moins de piquages en fond de réservoir.*
+- Well-designed relief valves rather than rupture discs, set below the vapour pressure at the kinetic limit, and redundant.
+  - *Des soupapes bien conçues plutôt que des disques de rupture, tarées sous la pression de vapeur à la limite cinétique, et redondantes.*
+- Porous surfaces for nucleation, sprinklers of at least 10 litres per minute per square metre, and 2 to 4 hours of fireproofing.
+  - *Des surfaces poreuses pour la nucléation, des sprinklers d'au −10 litres par minute et par mètre carré, et un coupe-feu de 2 à 4 heures.*
+- Flash question.
+  - *Question flash.*
+- A BLEVE: chemical or physical explosion?
+  - *Un BLEVE : explosion chimique ou physique ?*
+- And what condition is needed on the liquid?
+  - *Et que faut-il comme condition sur le liquide ?*
+- Physical, mechanical.
+  - *Physique, mécanique.*
+- You need a liquid superheated beyond its temperature limit.
+  - *Il faut un liquide surchauffé au-delà de sa limite de température.*
+- 20 tonnes of propylene: about 1200 kilos of TNT.
+  - *20 tonnes de propylène : environ 1200 kilos de TNT.*
+
+## [18:39] 9 · Overpressure
+
+- Ninth hazard: overpressure during testing.
+  - *Neuvième danger : la surpression pendant les essais.*
+- The hydrostatic test, with water, is done at design pressure times a factor: 1.5 before 1999 for ASME VIII, 1.3 today, and 1.25 or 1.43 in EN 13445.
+  - *L'essai hydrostatique, à l'eau, se fait à la pression de conception fois un coefficient : 1,5 avant 1999 pour l'ASME VIII, 1,3 aujourd'hui, et 1,25 ou 1,43 dans l'EN 13445.*
+- The pneumatic test, with gas, uses a lower factor, 1.1.
+  - *L'essai pneumatique, au gaz, utilise un coefficient plus bas, 1,1.*
+- But it is riskier: the elastic energy of a compressed gas is far greater than that of a liquid.
+  - *Mais il est plus risqué : l'énergie élastique d'un gaz comprimé est bien plus grande que celle d'un liquide.*
+- Rule: choose hydrostatic, unless water is incompatible: refractory, catalyst, freezing, drying impossible.
+  - *Règle : choisir l'hydrostatique, sauf si l'eau est incompatible : réfractaires, catalyseur, gel, sECHAge impossible.*
+- Hydrostatic testing has its risks: weight, vacuum collapse when draining, catastrophic failure.
+  - *L'hydrostatique a ses risques : le poids, l'effondrement par le vide à la vidange, la défaillance catastrophique.*
+- Prevention: fill and pressurise slowly, stepwise, with sufficient vents, cordon off the zone and keep personnel away.
+  - *Prévention : remplir et pressuriser lentement, par paliers, avec des évents suffisants, baliser la zone et éloigner le personnel.*
+- The leak test is done at a pressure not exceeding service pressure, often pneumatic with nitrogen so as not to introduce water.
+  - *L'essai d'étanchéité se fait à une pression qui ne dépasse pas la pression de service, souvent pneumatique à l'azote pour ne pas introduire d'eau.*
+
+## [19:41] 10 · Oxygen
+
+- Tenth hazard: oxygen.
+  - *Dixième danger : l'oxygène.*
+- It looks harmless, but it is a powerful oxidiser.
+  - *Il a l'air inoffensif, mais c'est un comburant puissant.*
+- GOX is gaseous oxygen; LOX is liquid oxygen.
+  - *GOX, oxygène gazeux ; LOX, oxygène liquide.*
+- The hazards apply from 23 % oxygen in air: at 25, it behaves more like pure oxygen than like air.
+  - *Les dangers s'appliquent dès 23 % d'oxygène dans l'air : à 25, ça se comporte plus comme de l'oxygène pur que comme de l'air.*
+- The fire triangle: fuel, oxidiser, ignition.
+  - *Le triangle du feu : combustible, comburant, ignition.*
+- With oxygen, the oxidiser is everywhere, and everything else is fuel.
+  - *Avec l'oxygène, le comburant est partout, et tout le reste est combustible.*
+- The triangle cannot be separated!
+  - *Le triangle ne peut pas être séparé !*
+- Dortmund, 1961: a LOX leak in an air distillation plant: 15 dead.
+  - *Dortmund, 1961 : fuite de LOX dans une installation de distillation d'air : 15 morts.*
+- Apollo 1, 1967: an electric arc in pure low-pressure oxygen ignites insulation: 3 astronauts dead.
+  - *Apollo 1, 1967 : un arc électrique dans de l'oxygène pur à basse pression enflamme un isolant : 3 astronautes morts.*
+- And still today, domestic and industrial accidents, through lack of knowledge.
+  - *Et aujourd'hui encore, des accidents domestiques et industriels, par manque de connaissance.*
+- Figures to remember: boiling point −183 °C; 1 volume of LOX gives 850 volumes of GOX; denser than air, so it accumulates low; UN 1072 for the compressed gas, 1073 for the liquid.
+  - *Chiffres à retenir : ébullition à −183 °C ; 1 volume de LOX donne 850 volumes de GOX ; plus dense que l'air, donc il s'accumule en bas ; ONU 1072 pour le gaz comprimé, 1073 pour le liquide.*
+- Misconceptions.
+  - *Les malentendus.*
+- "Oxygen is not flammable, so no risk": false, it is the oxidiser.
+  - *« L'oxygène n'est pas inflammable, donc pas de risque » : faux, c'est le comburant.*
+- "25 % oxygen is like air": false, it is like pure oxygen.
+  - *« 25 % d'oxygène, c'est comme l'air » : faux, c'est comme de l'oxygène pur.*
+- "LOX, being very cold, is less reactive": false, it can oxidise when cold, sometimes explosively.
+  - *« Le LOX, très froid, est moins réactif » : faux, il peut oxyder à froid, parfois de façon explosive.*
+- And do not confuse oxygen with compressed air.
+  - *Et ne pas confondre oxygène et air comprimé.*
+- After a purge, oxygen stays trapped in clothing: air yourself out before approaching an ignition source.
+  - *Après une purge, l'oxygène reste piégé dans les vêtements : aère-toi avant de t'approcher d'une source d'ignition.*
+- 7 ignition mechanisms, each with its countermeasure.
+  - *7 mécanismes d'ignition, avec leur parade.*
+- Adiabatic compression: open slowly.
+  - *Compression adiabatique : ouvrir lentement.*
+- Particle impact: cleaning, strainers, velocity limit.
+  - *Impact de particules : nettoyage, crépines, limite de vitesse.*
+- Friction: well-adjusted packings, compatible lubricants.
+  - *Friction : garnitures bien réglées, lubrifiants compatibles.*
+- Contaminants: oils, fibres, rust, insects: clean, test.
+  - *Contaminants : huiles, fibres, rouille, insectes : nettoyer, tester.*
+- Mechanical impact with LOX: no metal hammer.
+  - *Impact mécanique avec le LOX : pas de marteau métallique.*
+- Arc and welding: never weld on a system with LOX or GOX.
+  - *Arc et soudage : jamais de soudure sur un système avec LOX ou GOX.*
+- And other sources: vibration, chain reactions, porous materials.
+  - *Et autres sources : vibrations, réactions en chaîne, matières poreuses.*
+- With peroxide-forming substances, oxygen must be limited to a few ppm.
+  - *Avec les substances formant des peroxydes, l'oxygène doit être limité à quelques ppm.*
+- Adiabatic compression of oxygen, with k equal to 1.4: from 302 °C at 10 atmospheres up to 731 °C at 70.
+  - *Compression adiabatique de l'oxygène, avec k égal 1,4 : de 302 °C à 10 atmosphères jusqu'à 731 °C à 70.*
+- Plenty to ignite non-metallic parts.
+  - *Largement de quoi enflammer des pièces non métalliques.*
+- Open slowly!
+  - *Ouvrir lentement !*
+- For particles, we limit the velocity: 30 metres per second up to 14 bar, then 450 divided by P plus 1, then 4.5 above 99 bar.
+  - *Pour les particules, on limite la vitesse : 30 mètres par seconde jusqu'à 14 bars, puis 450 divisé par P plus 1, puis 4,5 au-delà de 99 bars.*
+- Target velocity: 50 % of the limit.
+  - *Vitesse cible : 50 % de la limite.*
+- Lubricants: mineral and organic oils are forbidden, and never grease on valve stems, bolts or gaskets.
+  - *Lubrifiants : les huiles minérales et organiques sont interdites, et jamais de graisse sur les tiges de vannes, boulons ou joints.*
+- Allowed: inert fluids, PFPE, CTFE oils, or water-based lubricants.
+  - *Autorisés : les fluides inertes, PFPE, huiles CTFE, ou lubrifiants à base d'eau.*
+- Design carefully, with ASTM G88, G63, G94, CGA G-4 and EIGA standards, and choose the right materials.
+  - *Concevoir avec soin, avec les normes ASTM G88, G63, G94, CGA G-4 et EIGA, et choisir les bons matériaux.*
+- And train people, use clean tools and clothes, put up signs.
+  - *Et former, utiliser des outils et vêtements propres, poser des panneaux.*
+- The motto: do everything, and do it well.
+  - *Le mot d'ordre : faites tout, et faites-le bien.*
+- Flash question.
+  - *Question flash.*
+- Why must you never open a high-pressure oxygen valve quickly?
+  - *Pourquoi ne jamais ouvrir rapidement une vanne d'oxygène haute pression ?*
+- Adiabatic compression of the trapped gas: up to 731 °C at 70 atmospheres, enough to ignite non-metallic parts.
+  - *Compression adiabatique du gaz piégé : jusqu'à 731 °C à 70 atmosphères, assez pour enflammer les parties non métalliques.*
+- We open slowly.
+  - *On ouvre lentement.*
+
+## [23:14] 11 · Toxicity
+
+- Eleventh hazard: toxicity.
+  - *Onzième danger : la toxicité.*
+- Today, the European CLP regulation, 1272 of 2008, aligned with the UN Globally Harmonised System.
+  - *Aujourd'hui, le règlement européen CLP, 1272 de 2008, aligné sur le système général harmonisé de l'ONU.*
+- 3 hazard groups: physical, 16 classes; health, 11 classes; environment.
+  - *3 groupes de dangers : physiques, 16 classes ; santé, 11 classes ; environnement.*
+- On the label: pictograms, signal word Danger or Warning, H statements, such as H225 highly flammable liquid and vapour, and P statements, such as P210 keep away from heat.
+  - *Sur l'étiquette : pictogrammes, mention Danger ou Attention, phrases H, comme H225 liquide et vapeurs très inflammables, et phrases P, comme P210 tenir à l'écart de la chaleur.*
+- Actors must classify, label, notify ECHA, and align the safety data sheet.
+  - *Les acteurs doivent classer, étiqueter, notifier à l'ECHA, et aligner la fiche de données de sécurité.*
+- If several categories are possible: the most restrictive.
+  - *Si plusieurs catégories sont possibles : la plus restrictive.*
+- For mixtures, flammability follows Le Chatelier or modified ISO 10156, but health hazards use different criteria.
+  - *Pour les mélanges, l'inflammabilité suit Le Chatelier ou l'ISO 10156 modifiée, mais les dangers pour la santé utilisent des critères différents.*
+- For health, 11 classes: acute toxicity, from category 1, the most severe, to 4; skin corrosion and irritation; eye damage; sensitisation; mutagenicity; carcinogenicity; reproductive toxicity; target organ toxicity; aspiration; endocrine disruption.
+  - *Pour la santé, 11 classes : toxicité aiguë, de la catégorie 1, la plus grave, à 4 ; corrosion et irritation ; lésions oculaires ; sensibilisation ; mutagénicité ; cancérogénicité ; reprotoxicité ; toxicité sur organes cibles ; aspiration ; perturbation endocrinienne.*
+- There is no universal toxicity criterion.
+  - *Il n'existe pas de critère universel de toxicité.*
+- Several tools: the DTL, dangerous toxic load; the SLOT, severe distress for almost everyone, close to LC1; the SLOD, significant likelihood of death, LC50; and the IDLH, the concentration one can escape from in 30 minutes without serious effect.
+  - *Plusieurs outils : la DTL, charge toxique dangereuse ; le SLOT, détresse sévère pour presque tous, proche de la LC1 ; le SLOD, probabilité significative de décès, la LC50 ; et l'IDLH, concentration d'où l'on s'ECHAppe en 30 minutes sans effet grave.*
+- Toxicity depends on concentration c and exposure time t.
+  - *La toxicité dépend de la concentration c et de la durée t.*
+- Haber's law: toxic load equals c times t, constant.
+  - *Loi de Haber : charge toxique égale c fois t, constante.*
+- Example, MIC: 150 ppm for 5 minutes, or 25 ppm for 30: 750 ppm minutes.
+  - *Exemple, le MIC : 150 ppm pendant 5 minutes, ou 25 ppm pendant 30 : 750 ppm minute.*
+- Generalisation: c to the power n times t.
+  - *Généralisation : c puissance n fois t.*
+- n is 1 for MIC, 2 for sulphur dioxide.
+  - *n vaut 1 pour le MIC, 2 pour le dioxyde de soufre.*
+- With a single LC50, n equals 1 by default.
+  - *Avec une seule LC50, n égale 1 par défaut.*
+- In practice: LC1 is about LC50 divided by 4, and the SLOD DTL is 2 to 3 times the SLOT DTL.
+  - *En pratique : la LC1 vaut environ la LC50 divisée par 4, et la DTL du SLOD fait 2 à 3 fois celle du SLOT.*
+- In the tables, c times t stays constant for MIC, c squared times t for sulphur dioxide.
+  - *Dans les tableaux, c fois t reste constant pour le MIC, c au carré fois t pour le dioxyde de soufre.*
+- AEGL, from the US environmental agency: level 1, reversible discomfort; level 2, irreversible effects or impaired ability to escape; level 3, life-threatening.
+  - *AEGL, de l'agence américaine de l'environnement : niveau 1, gêne réversible ; niveau 2, effets irréversibles ou capacité de fuite altérée ; niveau 3, danger vital.*
+- Computed for 10 minutes, 30 minutes, 1 hour, 4 hours and 8 hours.
+  - *Calculés pour 10 minutes, 30 minutes, 1 heure, 4 heures et 8 heures.*
+- Which criterion for your plant?
+  - *Quel critère pour ton usine ?*
+- The key point: be consistent.
+  - *Le point clé : être cohérent.*
+- Example with H₂S: AEGL-2 of 27 ppm.
+  - *Exemple avec l'H₂S : AEGL-2 de 27 ppm.*
+- At 15 metres from a leak through a 10 millimetre hole, the limit partial pressure is 0.01 bar.
+  - *À 15 mètres d'une fuite par un trou de 10 millimètres, la pression partielle limite est de 0,01 bar.*
+- At 10 bar, 0.1 % H₂S is enough for lethal service; at 30 bar, 0.033.
+  - *À 10 bars, 0,1 % d'H₂S suffit pour être en service létal ; à 30 bars, 0,033.*
+- A subjective criterion, but a consistent one.
+  - *Critère subjectif, mais cohérent.*
+- Long-term exposure: PEL-TWA from OSHA, legal and less strict; TLV-TWA from ACGIH, a stricter scientific recommendation.
+  - *Exposition à long terme : PEL-TWA de l'OSHA, légal et moins strict ; TLV-TWA de l'ACGIH, recommandation scientifique plus stricte.*
+- For carbon monoxide: 50 ppm, 25 in the US, 20 in Europe.
+  - *Pour le monoxyde de carbone : 50 ppm, 25 aux États-Unis, 20 en Europe.*
+- For 15 minutes: the TLV-STEL, at most 4 times per shift, with 60 minutes of clean air in between.
+  - *Pour 15 minutes : le TLV-STEL, 4 fois maximum par poste, avec 60 minutes d'air pur entre chaque.*
+- Impact on design.
+  - *Impact sur la conception.*
+- In lethal service, ASME VIII requires heat treatment, 100 % radiography, seamless tubes.
+  - *En service létal, l'ASME VIII impose traitement thermique, radiographie à 100 %, tubes sans soudure.*
+- Piping, category M of ASME B31.3: no threaded joints, RTJ or tongue-and-groove flanges, more non-destructive testing.
+  - *Tuyauteries, catégorie M de l'ASME B31.3 : pas de raccords filetés, brides RTJ ou à rainure et languette, plus de contrôles non destructifs.*
+- Fugitive emissions: double seals or sealless pumps, TA-Luft valves, class 6 seat.
+  - *Émissions fugitives : double garniture ou pompes sans garniture, vannes TA-Luft, siège classe 6.*
+- Isolation: SB, SBB or DBB depending on toxicity; and for very toxic products, a CDS, a closed drain system, with flare or scrubber.
+  - *Isolement : SB, SBB ou DBB selon la toxicité ; et pour les produits très toxiques, un CDS, système de drainage fermé, avec torche ou lavage.*
+- Gas detection, alarms, self-contained breathing apparatus and PPE, sprinklers with containment, pressurised control room.
+  - *Détection de gaz, alarmes, appareils respiratoires isolants et EPI, sprinklers avec rétention, salle de contrôle pressurisée.*
+- Remember: know the products and their effects, the PPE, never be careless, follow the work permit to the letter, and use Stop Work Authority.
+  - *À retenir : connaître les produits et leurs effets, les EPI, ne jamais être négligent, suivre le permis de travail à la lettre, et utiliser le Stop Work Authority.*
+- In case of a toxic leak, the PAS protocol: Protect, Alert, Save.
+  - *En cas de fuite toxique, protocole PAS : Protéger, Alerter, Sauver.*
+- First your safety, then the alert, then help without endangering yourself.
+  - *D'abord ta sécurité, puis l'alerte, puis l'aide sans te mettre en danger.*
+
+## [27:49] ★ · Final review
+
+- Express recap.
+  - *Récapitulatif express.*
+- PSM: 14 elements, 3 blocks.
+  - *PSM : 14 éléments, 3 blocs.*
+- Explosion: exothermic, fast, positive Δn, solid to gas.
+  - *Explosion : exothermique, rapide, Δn positif, solide vers gaz.*
+- Cst; LEL about 0.55 Cst; UEL about 4.8 square root of Cst; Le Chatelier; corrections: L, temperature then pressure; U, pressure then temperature.
+  - *Cst ; LEL environ 0,55 Cst ; UEL environ 4,8 racine de Cst ; Le Chatelier ; corrections : L, température puis pression ; U, pression puis température.*
+- Semenov: the tangent is the limit.
+  - *Semenov : la tangente est la limite.*
+- Adiabatic: final T equals T zero times the pressure ratio to the power (k−1)/k.
+  - *Adiabatique : T finale égale T zéro fois le rapport des pressions puissance (k−1)/k.*
+- External fire: API 521 and 520.
+  - *Feu externe : API 521 et 520.*
+- BLEVE: mechanical explosion, kinetic limit.
+  - *BLEVE : explosion mécanique, limite cinétique.*
+- Hydro before pneumatic.
+  - *Hydro avant pneumatique.*
+- Oxygen: inseparable fire triangle, no oil, open slowly.
+  - *Oxygène : triangle du feu inséparable, pas d'huile, ouvrir lentement.*
+- Toxicity: Haber, c to the power n times t, AEGL, PAS.
+  - *Toxicité : Haber, c puissance n fois t, AEGL, PAS.*
+- Final quiz, question 1.
+  - *Quiz final, question 1.*
+- How many elements in the PSM, in how many blocks?
+  - *Combien d'éléments dans le PSM, en combien de blocs ?*
+- 14 elements in 3 blocks: 2, 5, 7.
+  - *14 éléments en 3 blocs : 2, 5, 7.*
+- Question 2.
+  - *Question 2.*
+- In what order do we correct the LEL and UEL for temperature and pressure?
+  - *Dans quel ordre corrige-t-on la LEL et l'UEL pour la température et la pression ?*
+- LEL: temperature then pressure.
+  - *LEL : température puis pression.*
+- UEL: pressure then temperature.
+  - *UEL : pression puis température.*
+- Question 3.
+  - *Question 3.*
+- What is the difference between a BLEVE and a thermal runaway?
+  - *Quelle différence entre un BLEVE et un emballement thermique ?*
+- A BLEVE is a mechanical, physical explosion.
+  - *Le BLEVE est une explosion mécanique, physique.*
+- A runaway is an exothermic chemical reaction that accelerates itself.
+  - *L'emballement est une réaction chimique exothermique qui s'auto-accélère.*
+- Question 4.
+  - *Question 4.*
+- Why prefer the hydrostatic test to the pneumatic one?
+  - *Pourquoi préférer l'essai hydrostatique au pneumatique ?*
+- Because the elastic energy of a compressed gas is much higher than that of a liquid.
+  - *Parce que l'énergie élastique d'un gaz comprimé est bien plus élevée que celle d'un liquide.*
+- Question 5.
+  - *Question 5.*
+- What does it mean that, with oxygen, the fire triangle cannot be separated?
+  - *Que veut dire : avec l'oxygène, le triangle du feu ne peut pas être séparé ?*
+- The oxidiser is everywhere, everything is fuel: so no oil, slow opening, limited velocities, right materials, training.
+  - *Le comburant est partout, tout est combustible : donc pas d'huile, ouverture lente, vitesses limitées, bons matériaux, formation.*
+- Last question.
+  - *Dernière question.*
+- Toxic load, AEGL, PAS: explain each in one sentence.
+  - *Charge toxique, AEGL, PAS : explique chacun en une phrase.*
+- Toxic load: c to the power n times t.
+  - *Charge toxique : c puissance n fois t.*
+- AEGL: 3 levels of acute exposure.
+  - *AEGL : 3 niveaux d'exposition aiguë.*
+- PAS: Protect, Alert, Save.
+  - *PAS : Protéger, Alerter, Sauver.*
+- That's it, you have been through the whole course.
+  - *Voilà, tu as fait le tour du cours.*
+- To be really ready, redo the key calculations by hand: Cst and explosive limits, Le Chatelier, Burgess-Wheeler, adiabatic compression, BLEVE energy in TNT, toxic load.
+  - *Pour être vraiment opérationnel, refais les calculs à la main : Cst et limites d'explosivité, Le Chatelier, Burgess-Wheeler, compression adiabatique, énergie d'un BLEVE en TNT, charge toxique.*
+- And remember: do everything, and do it well.
+  - *Et rappelle-toi : faites tout, et faites-le bien.*
+- Good luck with your exam!
+  - *Bon courage pour ton partiel !*
